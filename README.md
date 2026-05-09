@@ -29,6 +29,9 @@ Użytkownik wpisuje tekst w języku angielskim, a aplikacja określa, czy jego w
 
 Użytkownik wpisuje tekst w języku angielskim, a aplikacja tłumaczy go na język niemiecki przy użyciu modelu Hugging Face.
 
+## Uruchomienie online
+[streamlit.app](https://s29267.streamlit.app/)
+
 ## Instalacja i uruchomienie lokalne
 
 1. Sklonuj repozytorium:
