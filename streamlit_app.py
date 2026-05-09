@@ -10,12 +10,12 @@ st.set_page_config(
 
 
 @st.cache_resource
-def load_sentiment_model():
+def load_sentiment_model(show_spinner=False):
     return pipeline("sentiment-analysis")
 
 
 @st.cache_resource
-def load_translation_model():
+def load_translation_model(show_spinner=False):
     model_name = "Helsinki-NLP/opus-mt-en-de"
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
