@@ -9,13 +9,13 @@ st.set_page_config(
 )
 
 
-@st.cache_resource
-def load_sentiment_model(show_spinner=False):
+@st.cache_resource(show_spinner=False)
+def load_sentiment_model():
     return pipeline("sentiment-analysis")
 
 
-@st.cache_resource
-def load_translation_model(show_spinner=False):
+@st.cache_resource(show_spinner=False)
+def load_translation_model():
     model_name = "Helsinki-NLP/opus-mt-en-de"
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
